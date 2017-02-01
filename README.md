@@ -36,7 +36,9 @@ Building and Training a Neural Network
 For this problem I chose to use a convolutional neural network because this is an image classification problem. 
 To come up with a model architecture, I used Nvidia's architecture as a starting pont and went from there. They trained a convolutional neural network for a similar type of problem.  My model also introduces a dropout layer after the first fully connected layer which helps to prevent overfitting to the training data.
 
-My architecture model is as follows:
+Nvidis CNN: http://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf
+
+My architecture model:
 
 Batch Normalization (input shape = (20, 64, 3))
 2D Convolutional Layer 1: (depth = 16, kernel = 3 x 3, stride = 2 X 2, border mode = valid, activation = ReLu, output shape = (None, 9, 31, 16))
