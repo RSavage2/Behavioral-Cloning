@@ -1,6 +1,6 @@
 # Behavioral-Cloning
 
-Udacity Self Driving Car Engineer Nanodegree - Project 3
+# Udacity Self Driving Car Engineer Nanodegree - Project 3
 
 The goal of this project is to train a vehicle to drive autonomously in a simulator by taking camera images as inputs to a deep neural network and outputting a predicted steering angle based on the image.
 
@@ -11,7 +11,7 @@ The project has 4 main parts:
  3: Building and Training a Neural Network
  4: Testing Model in Simulator
 
-Data Collection
+# Data Collection
 
 When training in the simulator, data is collected by recording images through three cameras on the vehicle; one in the center, one on the left side and one on the right. For each image which is recorded, the simulator also records an associated steering angle which is used as a label for the images.
 
@@ -25,13 +25,13 @@ While driving I did my best tp maintain the vehicle close to the center of the d
 Controlled Driving
 Controlled
 
-Image Preprocessing 
+# Image Preprocessing 
 
 The images outputted by the simulator are 160 by 320 pixels. First,  I chose to resize the images to 32 by 64. The final size of each image, and the input shape for my neural network, is 20 by 64 with 3 color channels.
 
 The last preprocessing step was to create a validation set made up of 5% of random images/labels from the full set. The validation set was used to monitor the performance of the neural network in training.
 
-Building and Training a Neural Network
+# Building and Training a Neural Network
 
 For this problem I chose to use a convolutional neural network because this is an image classification problem. 
 To come up with a model architecture, I used Nvidia's architecture as a starting pont and went from there. They trained a convolutional neural network for a similar type of problem.  My model also introduces a dropout layer after the first fully connected layer which helps to prevent overfitting to the training data.
@@ -55,7 +55,7 @@ Relu Activation
 Output Layer
 The model was compiled with an adam optimizer (learning rate = .0001), and was set to train for 15 epochs.  When training is complete the model and weights are saved to be used for autonomous driving in the simulator.
 
-Testing model in the sumulator
+# Testing model in the sumulator
 
 The script drive.py takes in a constant stream of images, resizes and crops them to the input shape for the model, and passes the transformed image array to the model which predicts an appropriate steering angle based on the image. The steering angle is then passed to the car as a control and the car steers itself accordingly. Hopefully the goal is for the car to replicate or even surpass the driving skills of the a user of the simulator. 
 
