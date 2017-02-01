@@ -27,7 +27,7 @@ Controlled
 
 # Image Preprocessing 
 
-The images outputted by the simulator are 160 by 320 pixels. First,  I chose to resize the images to 32 by 64. The final size of each image, and the input shape for my neural network, is 20 by 64 with 3 color channels.
+The images outputted by the simulator are 160 by 320 pixels. First,  I chose to resize the images to 32 by 64. The final size of each image, and the input shape for my neural network, is 20 by 64 with 3 color channels. Next, I sperated and randomized the images and labels.
 
 The last preprocessing step was to create a validation set made up of 5% of random images/labels from the full set. The validation set was used to monitor the performance of the neural network in training.
 
