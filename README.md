@@ -55,6 +55,7 @@ Relu Activation
 Output Layer
 The model was compiled with an adam optimizer (learning rate = .0001), and was set to train for 15 epochs.  When training is complete the model and weights are saved to be used for autonomous driving in the simulator.
 
+![alt tag](https://github.com/RSavage2/Behavioral-Cloning/blob/master/Behavioral%20Training/Screen%20Shot%202017-02-03%20at%207.32.50%20PM.png)
 # Testing model in the sumulator
 
 The script drive.py takes in a constant stream of images, resizes and crops them to the input shape for the model, and passes the transformed image array to the model which predicts an appropriate steering angle based on the image. The steering angle is then passed to the car as a control and the car steers itself accordingly. Hopefully the goal is for the car to replicate or even surpass the driving skills of the a user of the simulator. 
